@@ -1,0 +1,97 @@
+[ 
+    {
+        "id": 1,
+        "img": "./media/adidas-scarpe.jpg",
+        "name": "New model Adidas",
+        "category": "Scarpe",
+        "price": "100"
+    },
+
+    {
+        "id": 2,
+        "img": "./media/adidas-scarpe2.jpg",
+        "name": "Adidas nere gialle",
+        "category": "Scarpe",
+        "price": "50"
+    },
+
+    {
+        "id": 3,
+        "img": "./media/adidas-scarpe3.jpg",
+        "name": "Adidas rosse",
+        "category": "Scarpe",
+        "price": "150.99"
+    },
+
+    {
+        "id": 4,
+        "img": "./media/felpa-adidas.jpg",
+        "name": "Felpa Adidas nera",
+        "category": "Felpe",
+        "price": "57.89"
+    },
+
+    {
+        "id": 5,
+        "img": "./media/felpa-adidas2.jpg",
+        "name": "Felpa Adidas blu-bianco",
+        "category": "Felpe",
+        "price": "100"
+    },
+
+    {
+        "id": 6,
+        "img": "./media/felpa-nike.jpg",
+        "name": "Felpa Nike nera",
+        "category": "Felpe",
+        "price": "20.62"
+    },
+
+    {
+        "id": 7,
+        "img": "./media/jillet-nike.jpg",
+        "name": "Giacca Nike bianca",
+        "category": "Giacche",
+        "price": "857.96"
+    },
+
+    {
+        "id": 8,
+        "img": "./media/nike-scarpe.jpg",
+        "name": "Air Jordan",
+        "category": "Scarpe",
+        "price": "764.99"
+    },
+
+    {
+        "id": 9,
+        "img": "./media/Nike-scarpe2.jpg",
+        "name": "Air Jordan",
+        "category": "Scarpe",
+        "price": "450"
+    },
+
+    {
+        "id": 10,
+        "img": "./media/Nike-scarpe3.jpg",
+        "name": "Air Jordan",
+        "category": "Scarpe",
+        "price": "89.60"
+    },
+
+    {
+        "id": 11,
+        "img": "./media/Nike.jpg",
+        "name": "Air Jordan",
+        "category": "Scarpe",
+        "price": "1567.90"
+    },
+
+    {
+        "id": 12,
+        "img": "./media/tuta-felpa-adidas.jpg",
+        "name": "Felpa Adidas rossa",
+        "category": "Felpe",
+        "price": "400"
+    }
+]

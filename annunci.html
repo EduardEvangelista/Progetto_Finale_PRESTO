@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--css Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--swiper-->
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <!--icone Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <!--css style-->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg fixed-top" id="navchange">
+
+        <div class="container-fluid">
+
+          <a class="navbar-brand titolonav" href="#">Presto.it</a>
+
+          <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto titolonav mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link linknav" aria-current="page" href="./index.html">Home</a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link linknav" href="#">Tutti gli annunci</a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link linknav" href="#">Contatti</a>
+              </li>
+              <!--<li>-->
+              <!--  <a class=" btndark" href="#"><i class="bi bi-sun "></i></a>-->
+              <!--</li>-->
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+
+
+      <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 vh-100 d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex">
+                        <h1 class="titolo">Tutti</h1><br><h1 class="titolo1">gli annunci</h1>
+                    </div>
+                    <div>
+                        <h4 class="sottotitolo">
+                            Presto.it
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>  
+      </header>
+
+    <main>
+      <section class="container">
+            <div class="row">
+                <div class="col-12 text-center my-5">
+                    <h2>tutti gli annunci</h2>
+                    <button class="btn btn-secondary" 
+                            type="button" 
+                            data-bs-toggle="offcanvas" 
+                            data-bs-target="#offcanvasRight" 
+                            aria-controls="offcanvasRight">Filtri</button>
+                </div>
+                <div class="row" id="containerCard">
+
+                </div>
+            </div>
+      </section>
+
+      <footer class="container-fluid">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-around mt-5 mb-3">
+            <div>
+              <h2>Presto Sport</h2>
+              <h5>Chi siamo</h5>
+              <h5>Login</h5>
+              <h5>Registrati</h5>
+              <h5>Negozio</h5>
+              <h5>Lavora con noi</h5>
+              <h5>Eventi</h5>
+            </div>
+            <div class="text-center">
+              <h2>Social</h2>
+              <p>Seguici sui nostri canali e inviaci i tuoi commenti</p>
+              <div>
+                <i class="bi bi-facebook display-4 me-4"></i>
+                <i class="bi bi-instagram display-4 me-4"></i>
+                <i class="bi bi-whatsapp display-4 me-4"></i>
+              </div>
+            </div>
+            <div>
+              <h2>Contatti</h2>
+              <h5>Servizio Clienti</h5>
+              <h5>FAQ</h5>
+              <h5>Termini e condizioni</h5>
+              <h5>Stato dell'ordine</h5>
+              <h5>Reso</h5>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+
+      
+
+    <div class="offcanvas offcanvas-end cbgCanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Filtri</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="mb-3">
+
+                <h3>categoria</h3>
+
+                <div class="form-check" id="inputCategory">
+                  <input class="form-check-input" type="radio" name="categoria" id="All" checked>
+                  <label class="form-check-label" for="All">
+                    Tutte le categorie
+                  </label>
+                </div>
+
+            </div>
+            <div class="mb-3">
+            <h3>Prezzo</h3>
+                <label class="form-label" id="priceValue"></label>
+                <input type="range" class="form-range" id="priceInput">
+            </div>
+            <h3>Parola</h3>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="wordInput" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+        </div> 
+    </div>
+
+      <!--js Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script> 
+
+    <!--swiper script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!--main js-->
+    <script src="./annunci.js"></script>
+
+</body>
+</html>
